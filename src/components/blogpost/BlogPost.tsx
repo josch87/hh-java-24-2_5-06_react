@@ -21,7 +21,7 @@ export default function BlogPost({blogPost}: Props) {
                 <div className="blogpost__summary">
                     <p>{blogPost.summary}</p>
                     <p>
-                        <a href={"blogPost.url"}>Read more</a>
+                        <a href={blogPost.url}>Read more</a>
                     </p>
                 </div>
             </div>
