@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+    position: absolute;
+    color: white;
+    background-color: #747bff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer a {
+    color: inherit;
+}
