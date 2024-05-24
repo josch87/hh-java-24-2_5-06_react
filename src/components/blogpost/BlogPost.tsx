@@ -7,7 +7,7 @@ type Props = {
 
 export default function BlogPost({blogPost}: Props) {
     return (
-        <article>
+        <article className="blogpost">
             <h3>
                 {blogPost.title}
             </h3>

@@ -1,4 +1,7 @@
 .main {
     margin-top: var(--header-height);
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }

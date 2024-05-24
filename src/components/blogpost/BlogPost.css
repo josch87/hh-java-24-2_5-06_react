@@ -11,3 +11,13 @@
 .blogpost__image img {
     border: 1px solid black;
 }
+
+.blogpost {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.blogpost h3 {
+    margin: 0 0 10px 0;
+}
