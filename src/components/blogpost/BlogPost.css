@@ -1,0 +1,9 @@
+.blogpost__preview-container {
+    display: flex;
+    gap: 50px;
+}
+
+.blogpost__author {
+    font-size: .8rem;
+    margin-top: -15px;
+}
