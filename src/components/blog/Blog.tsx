@@ -1,3 +1,4 @@
+import "./Blog.css"
 import Header from "../header/Header.tsx";
 import Footer from "../footer/Footer.tsx";
 import BlogPost from "../blogpost/BlogPost.tsx";
@@ -12,9 +13,11 @@ export default function Blog() {
             </Header>
             <Main>
                 <h2>Blog Content</h2>
+                <div className="blog__posts">
                 {blogPosts.map((post) => {
                 return <BlogPost blogPost={post}/>
                 })}
+                </div>
             </Main>
             <Footer/>
         </>

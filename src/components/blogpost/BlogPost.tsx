@@ -16,7 +16,7 @@ export default function BlogPost({blogPost}: Props) {
                 <div className="blogpost__image">
                     {blogPost.image ?
                         <img src={blogPost.image} alt={blogPost.title} width={400}/> :
-                        <img src="" alt="No image available" width={400}/> }
+                        <img src="/src/assets/no-image.png" alt="No image available" width={400}/> }
                 </div>
                 <div className="blogpost__summary">
                     <p>{blogPost.summary}</p>
