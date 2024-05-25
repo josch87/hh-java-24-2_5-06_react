@@ -1,18 +1,3 @@
-.blogpost__preview-container {
-    display: flex;
-    gap: 50px;
-}
-
-.blogpost__author {
-    font-size: .8rem;
-    margin-top: -15px;
-}
-
-.blogpost__image img {
-    border: 1px solid lightgrey;
-    border-radius: var(--mantine-radius-md);
-}
-
 .blogpost {
     border: 1px solid lightgrey;
     border-radius: 10px;
@@ -21,4 +6,19 @@
 
 .blogpost h3 {
     margin: 0 0 10px 0;
+}
+
+.blogpost__author {
+    font-size: .8rem;
+    margin-top: -15px;
+}
+.blogpost__preview-container {
+    display: flex;
+    gap: 50px;
+}
+
+
+.blogpost__image {
+    border: 1px solid lightgrey;
+    border-radius: var(--mantine-radius-md);
 }

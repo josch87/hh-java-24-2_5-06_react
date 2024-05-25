@@ -13,11 +13,10 @@ export default function BlogPost({blogPost}: Props) {
             </h3>
             <p className="blogpost__author">by {blogPost.author}</p>
             <div className="blogpost__preview-container">
-                <div className="blogpost__image">
-                    {blogPost.image ?
-                        <img src={blogPost.image} alt={blogPost.title} width={400}/> :
-                        <img src="/src/assets/no-image.png" alt="No image available" width={400}/> }
-                </div>
+                {blogPost.image ?
+                    <img className="blogpost__image" src={blogPost.image} alt={blogPost.title} width={400}/> :
+                    <img className="blogpost__image" src="/src/assets/no-image.png" alt="No image available"
+                         width={400}/>}
                 <div className="blogpost__summary">
                     <p>{blogPost.summary}</p>
                     <p>
