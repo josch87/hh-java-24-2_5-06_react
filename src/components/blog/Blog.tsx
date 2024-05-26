@@ -10,7 +10,9 @@ export default function Blog() {
     return (
         <>
             <Header>
-                <h1>React</h1>
+                <a className="blog__title" href="/">
+                    <h1>React</h1>
+                </a>
             </Header>
             <Main>
                 <div className="blog__blog-area">

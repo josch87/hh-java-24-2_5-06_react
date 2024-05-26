@@ -1,3 +1,8 @@
+.blog__title {
+    text-decoration: none;
+    color: white;
+}
+
 .blog__posts {
     display: flex;
     flex-wrap: wrap;
