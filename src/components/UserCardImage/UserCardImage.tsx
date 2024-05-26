@@ -1,14 +1,30 @@
-import { Card, Avatar, Text, Group, Button } from '@mantine/core';
+import {Card, Avatar, Text, Group, Button} from '@mantine/core';
 import classes from './UserCardImage.module.css';
 
-const stats = [
-    { value: '34K', label: 'Followers' },
-    { value: '187', label: 'Follows' },
-    { value: '1.6K', label: 'Posts' },
-];
+type User = {
+    name: string,
+    position: string,
+    avatar: string,
+    backgroundImage: string,
+    button: {
+        text: string,
+        url: string,
+    },
+    stats:
+        {
+            value: string,
+            label: string,
+        }[]
 
-export function UserCardImage() {
-    const items = stats.map((stat) => (
+}
+
+type Props = {
+    user: User,
+};
+
+
+export function UserCardImage({user}: Props) {
+    const items = user.stats.map((stat) => (
         <div key={stat.label}>
             <Text ta="center" fz="lg" fw={500}>
                 {stat.value}
@@ -25,11 +41,11 @@ export function UserCardImage() {
                 h={140}
                 style={{
                     backgroundImage:
-                        'url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80)',
+                        `url(${user.backgroundImage}`,
                 }}
             />
             <Avatar
-                src="https://2.gravatar.com/avatar/8f6213720804d3379713f4219fb81335db5f0212ad551517a18d5d537c741406?size=128"
+                src={user.avatar}
                 size={80}
                 radius={80}
                 mx="auto"
@@ -37,16 +53,17 @@ export function UserCardImage() {
                 className={classes.avatar}
             />
             <Text ta="center" fz="lg" fw={500} mt="sm">
-                Aljoscha Zöller
+                {user.name}
             </Text>
             <Text ta="center" fz="sm" c="dimmed">
-                Fullstack engineer
+                {user.position}
             </Text>
             <Group mt="md" justify="center" gap={30}>
                 {items}
             </Group>
-            <Button fullWidth radius="md" mt="xl" size="md" variant="default">
-                Follow
+            <Button fullWidth radius="md" mt="xl" size="md" variant="default"
+                    onClick={() => window.open(user.button.url)}>
+                {user.button.text}
             </Button>
         </Card>
     );
