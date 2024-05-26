@@ -1,10 +1,12 @@
-
-
 .blog__posts {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+}
+
+.blog__blog-area h2 {
+    margin-bottom: 1rem;
 }
 
 .blog__profile-area {

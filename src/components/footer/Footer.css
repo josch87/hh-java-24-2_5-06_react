@@ -1,5 +1,6 @@
 .footer {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
     position: sticky;
@@ -8,6 +9,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    min-height: 50px
 }
 
 .footer a {

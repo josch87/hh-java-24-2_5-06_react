@@ -5,7 +5,12 @@
 }
 
 .blogpost h3 {
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
+    color: white;
+    background-color: #747bff;
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 5px;
 }
 
 .blogpost__author {
@@ -15,8 +20,8 @@
 .blogpost__preview-container {
     display: flex;
     gap: 50px;
+    margin-top: 1rem;
 }
-
 
 .blogpost__image {
     border: 1px solid lightgrey;
