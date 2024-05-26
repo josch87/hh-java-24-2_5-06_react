@@ -17,6 +17,13 @@
     font-size: .8rem;
     margin-top: -15px;
 }
+
+.blogpost__author-link {
+    text-decoration: none;
+    color: inherit;
+    font-style: italic;
+}
+
 .blogpost__preview-container {
     display: flex;
     gap: 50px;
@@ -26,4 +33,21 @@
 .blogpost__image {
     border: 1px solid lightgrey;
     border-radius: var(--mantine-radius-md);
+    width: 400px;
+    height: 100%;
+}
+
+.blogpost__summary {
+    margin-bottom: 1rem;
+}
+
+.blogpost__read-more-btn {
+    background-color: #747bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 50px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
 }
