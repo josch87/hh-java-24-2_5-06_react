@@ -1,27 +1,10 @@
 import {Card, Avatar, Text, Group, Button} from '@mantine/core';
 import classes from './UserCardImage.module.css';
-
-type User = {
-    name: string,
-    position: string,
-    avatar: string,
-    backgroundImage: string,
-    button: {
-        text: string,
-        url: string,
-    },
-    stats:
-        {
-            value: string,
-            label: string,
-        }[]
-
-}
+import {UserType} from "../../model/model.ts";
 
 type Props = {
-    user: User,
+    user: UserType,
 };
-
 
 export function UserCardImage({user}: Props) {
     const items = user.stats.map((stat) => (
