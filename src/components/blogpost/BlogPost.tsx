@@ -1,8 +1,8 @@
-import {blogPost} from "../blog/data.tsx";
 import "./BlogPost.css"
+import {BlogPostType} from "../../model/model.ts";
 
 type Props = {
-    blogPost: blogPost
+    blogPost: BlogPostType
 }
 
 export default function BlogPost({blogPost}: Props) {
