@@ -24,7 +24,7 @@ export const florian: AuthorType = {
     name: "Florian Weber",
     position: "Fullstack engineer",
     avatar: "https://images.ctfassets.net/m8n66tuamygx/70esMEv73Ctq01qvyqSP8h/e5569500f3e54f4c4316978963d313b3/P1060064.png?w=256&q=75&fm=webp",
-    backgroundImage: "https://images.unsplash.com/photo-1564865878688-9a244444042a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    backgroundImage: "https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
     button: {
         text: "neue fische",
         url: "https://www.neuefische.de/bootcamp/java-development#:~:text=Unsere%20Coaches-,Florian%20Weber,-Lead%20Coach%20Java"
@@ -42,7 +42,7 @@ export const mickey: AuthorType = {
     name: "Mickey Mouse",
     position: "Mascot",
     avatar: "https://images.unsplash.com/photo-1616776212814-fab73656dd8e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    backgroundImage: "https://images.unsplash.com/photo-1528041119984-da3a9f8d04d1?q=80&w=2609&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    backgroundImage: "https://images.unsplash.com/photo-1528041119984-da3a9f8d04d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
     button: {
         text: "Wikipedia",
         url: "https://de.wikipedia.org/wiki/Micky_Maus"
