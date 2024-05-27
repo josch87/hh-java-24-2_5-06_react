@@ -3,17 +3,18 @@ import Header from "../header/Header.tsx";
 import Footer from "../footer/Footer.tsx";
 import BlogPost from "../blogpost/BlogPost.tsx";
 import Main from "../main/Main.tsx";
-import {blogPosts} from "../../data/postData.tsx";
+import {blogPosts} from "../../data/postData.ts";
 import {UserCardImage} from "../UserCardImage/UserCardImage.tsx";
 import BlogSection from "../blogsection/BlogSection.tsx";
 import {authors} from "../../data/authorData.ts";
 import {Input} from "@mantine/core";
 import {ChangeEvent, useState} from "react";
+import {AuthorsType} from "../../model/model.ts";
 
 
 export default function Blog() {
 
-    const [filteredAuthors, setFilteredAuthors] = useState(authors);
+    const [filteredAuthors, setFilteredAuthors] = useState<AuthorsType>(authors);
 
     function handleOnChange(event: ChangeEvent<HTMLInputElement>) {
         const input: string = event.target.value
