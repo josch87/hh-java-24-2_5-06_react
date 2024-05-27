@@ -6,8 +6,7 @@ import Main from "../main/Main.tsx";
 import {blogPosts} from "../../data/postData.tsx";
 import {UserCardImage} from "../UserCardImage/UserCardImage.tsx";
 import BlogSection from "../blogsection/BlogSection.tsx";
-import {aljoscha} from "../../data/authorData.ts";
-
+import {authors} from "../../data/authorData.ts";
 
 
 export default function Blog() {
@@ -28,9 +27,15 @@ export default function Blog() {
                     </div>
                 </BlogSection>
                 <BlogSection>
-                    <h2>About me</h2>
-                    <div className="blog__user-card">
-                        <UserCardImage user={aljoscha}/>
+                    <h2>Authors</h2>
+                    <div className="blog__user-cards">
+                        {authors
+                            .sort((a, b) => a.sort - b.sort)
+                            .map((author) =>
+                                <div className="blog__user-card" key={author.id}>
+                                    <UserCardImage user={author}/>
+                                </div>
+                            )}
                     </div>
                 </BlogSection>
             </Main>

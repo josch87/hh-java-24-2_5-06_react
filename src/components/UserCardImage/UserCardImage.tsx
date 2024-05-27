@@ -1,9 +1,9 @@
 import {Card, Avatar, Text, Group, Button} from '@mantine/core';
 import classes from './UserCardImage.module.css';
-import {UserType} from "../../model/model.ts";
+import {AuthorType} from "../../model/model.ts";
 
 type Props = {
-    user: UserType,
+    user: AuthorType,
 };
 
 export function UserCardImage({user}: Props) {

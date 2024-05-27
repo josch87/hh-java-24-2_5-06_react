@@ -9,7 +9,9 @@ export type BlogPostType = {
 
 export type BlogPostsType = BlogPostType[];
 
-export type UserType = {
+export type AuthorType = {
+    id: string,
+    sort: number,
     name: string,
     position: string,
     avatar: string,
@@ -20,3 +22,6 @@ export type UserType = {
     },
     stats: {value: string, label: string} [],
 }
+
+export type AuthorsType = AuthorType[]
+
