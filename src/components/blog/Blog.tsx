@@ -7,9 +7,21 @@ import {blogPosts} from "../../data/postData.tsx";
 import {UserCardImage} from "../UserCardImage/UserCardImage.tsx";
 import BlogSection from "../blogsection/BlogSection.tsx";
 import {authors} from "../../data/authorData.ts";
+import {Input} from "@mantine/core";
+import {ChangeEvent, useState} from "react";
 
 
 export default function Blog() {
+
+    const [filteredAuthors, setFilteredAuthors] = useState(authors);
+
+    function handleOnChange(event: ChangeEvent<HTMLInputElement>) {
+        const input: string = event.target.value
+        const newFilteredAuthors = authors
+            .filter((author) => author.name.toLowerCase().includes(input.toLowerCase()))
+        setFilteredAuthors(newFilteredAuthors);
+    }
+
     return (
         <>
             <Header>
@@ -28,11 +40,14 @@ export default function Blog() {
                 </BlogSection>
                 <BlogSection>
                     <h2>Authors</h2>
+                    <div className="blog__author-search">
+                        <Input placeholder="Search authors" onChange={handleOnChange}/>
+                    </div>
                     <div className="blog__user-cards">
-                        {authors
+                        {filteredAuthors
                             .sort((a, b) => a.sort - b.sort)
                             .map((author) =>
-                                    <UserCardImage user={author} key={author.id}/>
+                                <UserCardImage user={author} key={author.id}/>
                             )}
                     </div>
                 </BlogSection>
