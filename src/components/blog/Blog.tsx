@@ -32,9 +32,7 @@ export default function Blog() {
                         {authors
                             .sort((a, b) => a.sort - b.sort)
                             .map((author) =>
-                                <div className="blog__user-card" key={author.id}>
-                                    <UserCardImage user={author}/>
-                                </div>
+                                    <UserCardImage user={author} key={author.id}/>
                             )}
                     </div>
                 </BlogSection>
